@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>PORTAFOLIO</title>
+</head>
+<body class="portafolio">
+    <header class="header__portafolio">
+            <img src="img/star.png" alt="Logo estrella" class="header__img">
+            <ul class="header__nav">
+                <li class="header__lista">Sobre mi</li>
+                <li class="header__lista">Skills</li>
+                <li class="header__lista">Hobbies</li>
+                <li class="header__lista">Formación</li>
+                <li class="header__lista">Proyectos</li>
+                <li class="header__lista">Hidalgoseba@hotmail.com</li>
+            </ul>
+    </header>
+    <main class="contenedor">
+    <section class="presentacion">
+        <div>
+            <p class="presentacion__nombre">Hola, mi nombre es Sebastián Hidalgo y construyo páginas web</p>
+            <p class="presentacion__descripcion">Mi formación esta transcurriendo en Oracle ONE en Alura Latam</p>
+            <nav class="presentacion__redes">
+                <a class="presentacion__redes-nav" href="#">Github</a>
+                <a class="presentacion__redes-nav" href="#">Linkedin</a>
+                <a class="presentacion__redes-nav" href="#">Instagram</a>
+                <a class="presentacion__redes-nav" href="#">Currículo</a>
+            </nav>
+        </div>
+        <img src="img/imgseba.jpg" alt="Imagen Personal Portafolio" class="presentacion__info-foto">
+    </section>
+    <section class="sobre__mi">
+            <p class="sobre__mi-titulo">Sobre mi</p>
+            <p class="sobre__mi-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, numquam perferendis natus officiis adipisci a magnam modi neque facere quasi obcaecati in id quod et distinctio suscipit soluta nemo unde!
+            Sapiente vel nostrum optio iste, vitae nesciunt totam fuga perferendis nihil provident? Rem laboriosam impedit quisquam culpa officiis minus mollitia voluptate alias rerum? Ipsum repellat excepturi perspiciatis ut accusantium praesentium?
+            Asperiores laborum rerum voluptates distinctio qui, autem recusandae, quo fugiat facere animi ex, iusto exercitationem hic sint perspiciatis voluptas accusamus? Nostrum, odit atque! Ab dolores ut, debitis architecto dolorem minima.
+            Nostrum assumenda quo doloribus molestias consectetur. Deleniti, sapiente corporis? Delectus modi nobis sed doloribus reprehenderit amet tenetur corporis ipsam. Sapiente porro placeat, vel ipsam aliquid qui omnis laborum impedit commodi?</p>
+    </section>
+    <section class="skillsHobbies">
+        <h3 class="skills__titulo">Skills</h3>
+           <div class="skills">
+                <img class="skills__img" src="img/Html5.png" alt="logo html5">
+                <img class="skills__img" src="img/Javascript.png" alt="logo javascript">
+                <img class="skills__img" src="img/Php.png" alt="logo php">
+                <img class="skills__img" src="img/Node Js.png" alt="logo node js">
+                <img class="skills__img" src="img/React.png" alt="logo react">
+                <img class="skills__img" src="img/Css.png" alt="logo css">
+            </div>
+        <h3 class="skills__titulo">Hobbies</h3>
+            <div class="hobbies">
+                <img class="hobbies__img" src="img/skate.png" alt="logo html5">
+                <img class="hobbies__img" src="img/bajo.png" alt="logo javascript">
+                <img class="hobbies__img" src="img/auricular.png" alt="logo php">
+                <img class="hobbies__img" src="img/series.png" alt="logo node js">
+                <img class="hobbies__img" src="img/cocinar.png" alt="logo react">
+                <img class="hobbies__img" src="img/fotos.png" alt="logo css">
+            </div>
+    </section>
+
+    <section class="experiencia__academica">
+        <h3 class="skills__titulo">Experiencia Académica</h3>
+            <img src="img/aluraone.png" alt="Logo Alura" class="experiencia__academica-alura">
+            <p class="experiencia__academica-titulo">Formación en Front-End</p>
+            <p class="experiencia__academica-descripcion">2023-Alura</p>
+    </section>
+    <section class="experiencia__profesional">
+        <h3 class="skills__titulo">Experiencia Profesional</h3>
+            <div class="experiencia__profesional-seccion1">
+                <img src="img/Rectangle.png" alt="Alura ONE" class="experiencia__profesional-img">
+                <div class="experiencia__profesional-seccion2">
+                    <p class="experiencia__profesional-titulo">Encriptador de Texto</p>
+                    <p class="experiencia__profesional-descripcion">Challenge Alura</p>
+                    <div>
+                        <button type="submit" value="repositorio" class="btn btn-repo">Repositorio</button>
+                        <button type="submit" value="demo" class="btn btn-demo">Ver Demo</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contacto">
+            <div class="contacto__img">
+                <img src="img/telefono.png" alt="Icono Telefono" class="contacto__img-tel">
+            </div>
+            <div class="contacto__mensaje">
+                <h4>Contácto</h4>
+                <p>¿Quieres contactarme?<br>Completa el siguiente formulario y me contactaré lo antes posible.</p>
+                <form class="formulario">
+                    <div class="formulario__contacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="input" id="nombre" name="nombre" placeholder="Ingrese su Nombre"/>
+                    </div>
+                    <div class="formulario__contacto">
+                        <label for="email">Email</label>
+                        <input type="text" class="input" id="email" name="email" placeholder="Ingrese su Email"/>
+                    </div>
+                    <div class="formulario__contacto">
+                        <input type="text" class="input" id="asunto" name="asunto" value="Asunto"/>
+                    </div>
+                    <div class="formulario__contacto">
+                        <textarea name="mensaje" id="mensaje" cols="10" rows="5"/></textarea>
+                    </div>
+                </form>
+                <button type="button" value="Enviar" class="btn btn-enviar">Enviar Mensaje</button>
+            </div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__parrafo">Desarrollado por Sebastián Hidalgo <br>2023</p>
+    </footer>
+</body>
+<script src="scrypt.js"></script>
+</html>

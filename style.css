@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.portafolio {
+    background: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    width: 94%;
+    margin: 0 auto;
+
+}
+.header__portafolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+.header__lista {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Dosis',sans-serif;
+    font-weight: 400;
+}
+.header__nav .header__lista:last-child {
+    font-weight: bold;
+}
+.presentacion {
+    display: flex;
+}
+.presentacion__nombre {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem 0 2rem 3rem;
+}
+.presentacion__descripcion {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 1rem 3rem;
+}
+.presentacion__redes{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.redes__nav {
+    text-decoration: none;
+    color: black;
+}
+
+.presentacion__redes-nav {
+    padding: 1rem;
+    text-decoration: none;
+    margin: 0 0 0 3rem;
+}
+.presentacion__info-foto {
+    width: 368px;
+    height: 368px;
+    border-radius: 100%;
+    margin: auto;
+}
+.sobre__mi {
+    background:  #dbf0fe;
+    margin: 0 auto;
+}
+.sobre__mi-titulo {
+    color: #464646;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.sobre__mi-descripcion {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.skillsHobbies {
+    background: #F5F5F5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.skills__titulo {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__img {
+    width: 130px;
+    height: 128px;
+    padding: 1rem;
+}
+.hobbies {
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies__img {
+    width: 130px;
+    height: 128px;
+    padding: 1rem;
+}
+.experiencia__academica {
+    background: #EAF2FD;
+}
+.experiencia__academica-alura {
+    margin-left: auto;
+    margin-right: auto;
+}
+.experiencia__academica-titulo {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.experiencia__profesional-seccion1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.experiencia__profesional-seccion2 {
+    margin-left: 1rem;
+    margin-top: 8rem;
+}
+.experiencia__profesional-titulo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px grey;
+}
+.experiencia__profesional-descripcion {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px grey;
+}
+.btn {
+    width: 161px;
+    height: 51px;
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+.btn-repo {
+    background-color: white;
+    color: #2A7AE4;
+    border-color: #2A7AE4;
+}
+.btn-demo {
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+}
+.contacto {
+    background: #EAF2FD;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.contacto__img-tel {
+    width: 340px;
+}
+.contacto__mensaje {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+}
+.input {
+    width: 215px;
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.btn-enviar {
+     background-color: #2A7AE4;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+}
+.footer {
+    background: #ffffff;
+}
+.footer__parrafo {
+    font-size: 1.2rem;
+    font-family: 'Dosis',sans-serif;
+    text-align: center;
+}
+
+/* Hacer responsive la página */
+@media screen and (max-width: 800px) {
+    .header__portafolio .header__nav .header__lista:nth-child(-n+5){
+        display: none;
+    }
+    .presentacion {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .presentacion__nombre {
+        margin: auto;
+        text-align: left;
+    }
+    .presentacion__descripcion {
+        margin: auto;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .presentacion__redes-nav {
+        margin: 0 ;
+        padding: .5rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .skills {
+        display: block;
+        flex: 1;
+    }
+    .hobbies {
+        display: block;
+    }
+    .experiencia__profesional-seccion1 {
+        display: block;
+        margin: 0;
+    }
+    .experiencia__profesional-img {
+        width: 100%;
+    }
+    .experiencia__profesional-seccion2 {
+        margin: 0;
+    }
+    .contacto {
+        display: block;
+    }
+    .contacto__img-tel {
+        display: none;
+    }
+}
